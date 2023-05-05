@@ -76,7 +76,8 @@ public class SecurityConfiguration {
 
             public void addCorsMappings (CorsRegistry registry) {
 
-                registry.addMapping("/**").allowedMethods("*").allowedOrigins("http://localhost:3001").allowedHeaders("*") ;
+                registry.addMapping("/**").allowedMethods("*").allowedOrigins("http://localhost:3001", "https://partypad-frontend-external.herokuapp.com").allowedHeaders("*") ;
+
 
             }
 
